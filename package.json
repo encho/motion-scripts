@@ -12,6 +12,7 @@
   "license": "UNLICENSED",
   "devDependencies": {
     "@remotion/eslint-config": "^3.0.0",
+    "@types/numeral": "^2.0.2",
     "@types/react": "^18.0.26",
     "@types/web": "^0.0.86",
     "eslint": "^8.30.0",
@@ -20,6 +21,8 @@
   },
   "dependencies": {
     "@remotion/cli": "3.3.33",
+    "@visx/scale": "^3.0.0",
+    "numeral": "^2.0.6",
     "react": "^18.0.0",
     "react-dom": "^18.0.0",
     "remotion": "3.3.33"
