@@ -37,7 +37,7 @@ const barsAreaCSS: React.CSSProperties = {
 };
 
 export const Bars: React.FC = () => {
-	const value = 82.5;
+	const value = 32;
 
 	const frame = useCurrentFrame();
 	const opacity = interpolate(frame, [0, 10], [0, 1], {
@@ -60,7 +60,7 @@ export const Bars: React.FC = () => {
 	});
 
 	const maxBarColor = '#e0e0e0';
-	const valueBarColor = '#f05122';
+	const valueBarColor = '#ff00ff';
 
 	const yExtent = [0, barsArea.height];
 
