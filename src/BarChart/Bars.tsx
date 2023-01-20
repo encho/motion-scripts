@@ -24,7 +24,7 @@ const barsArea = {
 	x1: 700,
 	// x2: 220,
 	width: 500,
-	y1: 300,
+	y1: 330,
 	// y2: 120,
 	// height: 700,
 	height: 400,
@@ -81,7 +81,8 @@ export const Bars: React.FC = () => {
 	const currentDisplayValueMapped = valueScale(currentDisplayValue);
 	const valueBarHeight = currentDisplayValueMapped - minMapped;
 
-	const horizontalPaddingInnerBar = 0.1;
+	// const horizontalPaddingInnerBar = 0.1;
+	const horizontalPaddingInnerBar = 0;
 	const paddingLeft = barsArea.width * 0.5 * horizontalPaddingInnerBar;
 
 	return (

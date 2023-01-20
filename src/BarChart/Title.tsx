@@ -5,7 +5,7 @@ import {FONT_FAMILY} from './constants';
 const title: React.CSSProperties = {
 	fontFamily: FONT_FAMILY,
 	fontWeight: 'bold',
-	fontSize: 100,
+	fontSize: 80,
 	textAlign: 'center',
 	position: 'absolute',
 	bottom: 130,

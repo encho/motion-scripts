@@ -1,4 +1,3 @@
-import {spring} from 'remotion';
 import {
 	AbsoluteFill,
 	interpolate,
@@ -79,13 +78,6 @@ export const GridDemo: React.FC<{
 					height={layout.height}
 					areas={layout.areas}
 				/>
-				{/* TODO such a title: */}
-				{/* <Title area={layout.areas.title}>
-					Hello Test Title
-				</Title> */}
-				{/* TODO such a bar: */}
-				{/* <SinglePercenageBar area={layout.areas.body} value={88} />
-				 */}
 			</AbsoluteFill>
 		</AbsoluteFill>
 	);
