@@ -36,7 +36,7 @@ export const Title: React.FC<{
 					fps: videoConfig.fps,
 					frame: frame - delay,
 					config: {
-						damping: 200,
+						damping: 11,
 					},
 				});
 
@@ -46,6 +46,7 @@ export const Title: React.FC<{
 						style={{
 							...word,
 							color: titleColor,
+							opacity: `${scale}`,
 							transform: `scale(${scale})`,
 						}}
 					>

@@ -11,14 +11,14 @@ import {scaleLinear} from '@visx/scale';
 import {COLOR_1, FONT_FAMILY} from './constants';
 import theme from '../themes';
 
-type Area = {
-	x1: number;
-	// x2: number;
-	y1: number;
-	// y2: number;
-	width: number;
-	height: number;
-};
+// type Area = {
+// 	x1: number;
+// 	// x2: number;
+// 	y1: number;
+// 	// y2: number;
+// 	width: number;
+// 	height: number;
+// };
 
 const barsArea = {
 	x1: 700,
