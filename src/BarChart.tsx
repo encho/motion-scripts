@@ -7,9 +7,10 @@ import {
 	useVideoConfig,
 } from 'remotion';
 // import {Logo} from './HelloWorld/Logo';
-import {Subtitle} from './BarChart/Subtitle';
+// import {Subtitle} from './BarChart/Subtitle';
 import {Title} from './BarChart/Title';
 import {Bars} from './BarChart/Bars';
+import theme from './themes';
 
 export const BarChart: React.FC<{
 	titleText: string;
@@ -48,7 +49,7 @@ export const BarChart: React.FC<{
 	// A <AbsoluteFill> is just a absolutely positioned <div>!
 	return (
 		// <AbsoluteFill style={{backgroundColor: 'transparent'}}>
-		<AbsoluteFill style={{backgroundColor: 'white'}}>
+		<AbsoluteFill style={{backgroundColor: theme.colors.Slide.background}}>
 			<AbsoluteFill style={{opacity}}>
 				{/* <AbsoluteFill style={{transform: `translateY(${logoTranslation}px)`}}>
 					<Logo />
@@ -58,7 +59,10 @@ export const BarChart: React.FC<{
 					<Title titleText={titleText} titleColor={titleColor} />
 				</Sequence> */}
 				<Sequence from={10}>
-					<Title titleText={'of italians eat pizza'} titleColor={titleColor} />
+					<Title
+						titleText={'of italians eat pizza'}
+						titleColor={theme.colors.Title.text}
+					/>
 				</Sequence>
 				<Sequence from={10}>
 					<Bars />

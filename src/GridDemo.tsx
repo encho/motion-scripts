@@ -2,7 +2,6 @@ import {spring} from 'remotion';
 import {
 	AbsoluteFill,
 	interpolate,
-	// Sequence,
 	useCurrentFrame,
 	useVideoConfig,
 } from 'remotion';
@@ -11,9 +10,10 @@ import {
 	useGridLayout,
 	TGridLayoutAreaSpec,
 	TGridRailSpec,
-	// Area,
 	DisplayGridLayout,
 } from './acetti-viz';
+
+import theme from './themes';
 
 export const GridDemo: React.FC<{
 	titleText: string;
@@ -72,7 +72,7 @@ export const GridDemo: React.FC<{
 
 	// A <AbsoluteFill> is just a absolutely positioned <div>!
 	return (
-		<AbsoluteFill style={{backgroundColor: '#000000'}}>
+		<AbsoluteFill style={{backgroundColor: theme.colors.Slide.background}}>
 			<AbsoluteFill style={{opacity}}>
 				<DisplayGridLayout
 					width={layout.width}

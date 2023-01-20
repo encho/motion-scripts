@@ -1,4 +1,3 @@
-import React from 'react';
 import {toPairs} from 'lodash';
 import Svg from './Svg';
 import Area from './Area';
@@ -17,8 +16,10 @@ export default function DisplayGridLayout({
 	areas,
 }: TDisplayGridLayoutProps) {
 	return (
-		<div>
-			{/* <h1>DisplayGridLayout</h1> */}
+		<div style={{position: 'relative'}}>
+			<div style={{position: 'absolute', color: 'white', left: 20}}>
+				<h1>DisplayGridLayout</h1>
+			</div>
 			<Svg width={width} height={height}>
 				{toPairs(areas).map(([name, area]) => (
 					<Area key={name} area={area} show>

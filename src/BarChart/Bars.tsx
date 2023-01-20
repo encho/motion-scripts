@@ -9,6 +9,7 @@ import {
 import numeral from 'numeral';
 import {scaleLinear} from '@visx/scale';
 import {COLOR_1, FONT_FAMILY} from './constants';
+import theme from '../themes';
 
 type Area = {
 	x1: number;
@@ -59,8 +60,9 @@ export const Bars: React.FC = () => {
 		durationInFrames: 40,
 	});
 
-	const maxBarColor = '#e0e0e0';
-	const valueBarColor = '#ff00ff';
+	const maxBarColor = theme.colors.BarChart.railBackground;
+	const valueBarColor = theme.colors.BarChart.barFill;
+	const valueTextColor = theme.colors.BarChart.valueText;
 
 	const yExtent = [0, barsArea.height];
 
@@ -98,7 +100,7 @@ export const Bars: React.FC = () => {
 						fontSize: 130,
 						fontWeight: 800,
 						opacity: valueTextOpacity,
-						// transform: `scale(${valueTextOpacity})`,
+						color: valueTextColor,
 					}}
 				>
 					{formatPercentage({amount: currentDisplayValue / 100})}

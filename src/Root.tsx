@@ -39,7 +39,7 @@ export const RemotionRoot: React.FC = () => {
 				// npx remotion render src/index.ts <id> out/video.mp4
 				id="BarChart"
 				component={BarChart}
-				durationInFrames={150}
+				durationInFrames={100}
 				fps={30}
 				{...horizontalVideo}
 				// You can override these props for each render:
